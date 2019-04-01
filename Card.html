@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es-sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="Index, Follow">
+        <meta name="author" content="mario.carranza996@gmail.com">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+        <link rel="stylesheet" href="css/MaterializeDesign2.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Cards - Materialize Design 2</title>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="gradient-purple">
+                <div class="nav-wrapper">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <form>
+                        <div class="input-field">
+                            <input id="search" class="header-search-input" type="search" required id="search">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons" id="limpiar">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li>
+                <div class="user-view" style="max-height: 72px; padding: 12px;">
+                    <i class="side-nav-logo"></i>
+                    <a href="#name"><span class="black-text">Material Design 2</span></a>
+                </div>
+            </li>
+        </ul>
+        <header class="gradient-purple"></header>
+        <main>
+            <div class="row">
+                <div class="container" id="contenedor">
+                    <div class="section">
+                        <h3 class="white-text">Cards</h3>
+                    </div>
+                    <!--Basic card-->
+                    <div class="card-panel">
+                        <p class="flow-text">Basic card</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m5">
+                                    <div class="card blue-grey darken-1">
+                                        <div class="card-content white-text">
+                                            <span class="card-title">Card Title</span>
+                                            <p class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">This is a link</a>
+                                            <a href="#">This is a link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class="col s12 m6 l5"&gt;
+                                        &lt;div class="card blue-grey darken-1"&gt;
+                                            &lt;div class="card-content white-text"&gt;
+                                                &lt;span class="card-title"&gt;Card Title&lt;/span&gt;
+                                                &lt;p class="white-text"&gt;I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="card-action"&gt;
+                                                &lt;a href="#"&gt;This is a link&lt;/a&gt;
+                                                &lt;a href="#"&gt;This is a link&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!--Image card-->
+                    <div class="card-panel">
+                        <p class="flow-text">Image card</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m6 l5">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/sample-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-header">
+                                            <div class="header-text">
+                                                <span class="primary-text">Title goes here</span>
+                                                <span class="secondary-text">Secondary text</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m6 l5&quot;&gt;
+                                            &lt;div class=&quot;card&quot;&gt;
+                                                &lt;div class=&quot;card-image&quot;&gt;
+                                                    &lt;img src=&quot;images/sample-1.jpg&quot; alt=&quot;&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-header&quot;&gt;
+                                                    &lt;div class=&quot;header-text&quot;&gt;
+                                                        &lt;span class=&quot;primary-text&quot;&gt;Title goes here&lt;/span&gt;
+                                                        &lt;span class=&quot;secondary-text&quot;&gt;Secondary text&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-content&quot;&gt;
+                                                    &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                                                        I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!--Action card-->
+                    <div class="card-panel">
+                        <p class="flow-text">Action card</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m6 l5 xl4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="header-image">
+                                                <img src="images/yuna.jpg">
+                                            </div>
+                                            <div class="header-text">
+                                                <span class="primary-text">Title goes here</span>
+                                                <span class="secondary-text">Secondary text</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-image">
+                                            <img src="images/sample-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a class="btn-flat waves-effect purple-text text-darken-2" href="#!">Action 1</a>
+                                            <a class="btn-flat waves-effect purple-text text-darken-2" href="#!">Action 2</a>
+                                            <i class="Small material-icons">more_vert</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m6 l5 xl4&quot;&gt;
+                                            &lt;div class=&quot;card&quot;&gt;
+                                                &lt;div class=&quot;card-header&quot;&gt;
+                                                    &lt;div class=&quot;header-image&quot;&gt;
+                                                        &lt;img src=&quot;images/yuna.jpg&quot;&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;header-text&quot;&gt;
+                                                        &lt;span class=&quot;primary-text&quot;&gt;Title goes here&lt;/span&gt;
+                                                        &lt;span class=&quot;secondary-text&quot;&gt;Secondary text&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-image&quot;&gt;
+                                                    &lt;img src=&quot;images/sample-1.jpg&quot; alt=&quot;&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-content&quot;&gt;
+                                                    &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                                                        I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-action&quot;&gt;
+                                                    &lt;a class=&quot;btn-flat waves-effect purple-text text-darken-2&quot; href=&quot;#!&quot;&gt;Action 1&lt;/a&gt;
+                                                    &lt;a class=&quot;btn-flat waves-effect purple-text text-darken-2&quot; href=&quot;#!&quot;&gt;Action 2&lt;/a&gt;
+                                                    &lt;i class=&quot;Small material-icons&quot;&gt;more_vert&lt;/i&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!--Expand card-->
+                    <div class="card-panel">
+                        <p class="flow-text">Expand card</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m6 l4">
+                                    <div class="card card-expand">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img src="images/cake.jpg">
+                                        </div>
+                                        <ul class="collapsible expandable">
+                                            <li>
+                                                <div class="collapsible-header">
+                                                    <div class="header-image">
+                                                        <img src="images/yuna.jpg">
+                                                    </div>
+                                                    <div class="header-text">
+                                                        <span class="primary-text">Title goes here</span>
+                                                        <span class="secondary-text">Secondary text</span>
+                                                        <i class="Small material-icons collapse">expand_more</i>
+                                                    </div>
+                                                </div>
+                                                <div class="collapsible-body white">
+                                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                                            I am convenient because I require little markup to use effectively.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6 l4">
+                                    <div class="card card-expand">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img src="images/cake.jpg">
+                                        </div>
+                                        <ul class="collapsible expandable">
+                                            <li>
+                                                <div class="collapsible-header">
+                                                    <div class="header-image">
+                                                        <img src="images/yuna.jpg">
+                                                    </div>
+                                                    <div class="header-text">
+                                                        <span class="primary-text">Title goes here</span>
+                                                        <span class="secondary-text">Secondary text</span>
+                                                        <i class="Small material-icons collapse">expand_more</i>
+                                                    </div>
+                                                </div>
+                                                <div class="collapsible-body white">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m6 l4&quot;&gt;
+                                            &lt;div class=&quot;card card-expand&quot;&gt;
+                                                &lt;div class=&quot;card-image waves-effect waves-block waves-light&quot;&gt;
+                                                    &lt;img src=&quot;images/cake.jpg&quot; alt=&quot;&quot; class=&quot;activator&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;ul class=&quot;collapsible expandable&quot;&gt;
+                                                    &lt;li&gt;
+                                                        &lt;div class=&quot;collapsible-header&quot;&gt;
+                                                            &lt;div class=&quot;header-image&quot;&gt;
+                                                                &lt;img src=&quot;images/yuna.jpg&quot;&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;header-text&quot;&gt;
+                                                                &lt;span class=&quot;primary-text&quot;&gt;Title goes here&lt;/span&gt;
+                                                                &lt;span class=&quot;secondary-text&quot;&gt;Secondary text&lt;/span&gt;
+                                                                &lt;i class=&quot;Small material-icons collapse&quot;&gt;expand_more&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;collapsible-body white&quot;&gt;
+                                                            &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                                                                    I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!--Fabs card-->
+                    <div class="card-panel">
+                        <p class="flow-text">With fabs</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m6 l4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="images/sample-1.jpg">
+                                            <span class="card-title">Card Title</span>
+                                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                                                little markup to use effectively.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m6 l4&quot;&gt;
+                                            &lt;div class=&quot;card card-expand&quot;&gt;
+                                                &lt;div class=&quot;card-image waves-effect waves-block waves-light&quot;&gt;
+                                                    &lt;img src=&quot;images/cake.jpg&quot; alt=&quot;&quot; class=&quot;activator&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;ul class=&quot;collapsible expandable&quot;&gt;
+                                                    &lt;li&gt;
+                                                        &lt;div class=&quot;collapsible-header&quot;&gt;
+                                                            &lt;div class=&quot;header-image&quot;&gt;
+                                                                &lt;img src=&quot;images/yuna.jpg&quot;&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;header-text&quot;&gt;
+                                                                &lt;span class=&quot;primary-text&quot;&gt;Title goes here&lt;/span&gt;
+                                                                &lt;span class=&quot;secondary-text&quot;&gt;Secondary text&lt;/span&gt;
+                                                                &lt;i class=&quot;Small material-icons collapse&quot;&gt;expand_more&lt;/i&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class=&quot;collapsible-body white&quot;&gt;
+                                                            &lt;p&gt;I am a very simple card. I am good at containing small bits of information.
+                                                                    I am convenient because I require little markup to use effectively.&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card-panel">
+                        <p class="flow-text">Horizontal card</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m9 l7">
+                                    <div class="card horizontal">
+                                        <div class="card-image">
+                                            <img src="images/cake2.jpg">
+                                        </div>
+                                        <div class="card-stacked">
+                                            <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                            </div>
+                                            <div class="card-action">
+                                                <a class="btn-flat waves-effect purple-text text-darken-2" href="#!">This is a link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m9 l7&quot;&gt;
+                                            &lt;h2 class=&quot;header&quot;&gt;Horizontal Card&lt;/h2&gt;
+                                            &lt;div class=&quot;card horizontal&quot;&gt;
+                                                &lt;div class=&quot;card-image&quot;&gt;
+                                                    &lt;img src=&quot;images/cake2.jpg&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-stacked&quot;&gt;
+                                                    &lt;div class=&quot;card-content&quot;&gt;
+                                                        &lt;p&gt;I am a very simple card. I am good at containing small bits of information.&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;card-action&quot;&gt;
+                                                        &lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card-panel">
+                        <p class="flow-text">Card reveal</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m6 l5">
+                                    <div class="card">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="images/office.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m6 l5&quot;&gt;
+                                            &lt;h2 class=&quot;header&quot;&gt;Horizontal Card&lt;/h2&gt;
+                                            &lt;div class=&quot;card horizontal&quot;&gt;
+                                                &lt;div class=&quot;card-image&quot;&gt;
+                                                    &lt;img src=&quot;images/cake2.jpg&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;card-stacked&quot;&gt;
+                                                    &lt;div class=&quot;card-content&quot;&gt;
+                                                        &lt;p&gt;I am a very simple card. I am good at containing small bits of information.&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class=&quot;card-action&quot;&gt;
+                                                        &lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <!--Card Sizes-->
+                    <div class="card-panel">
+                        <p class="flow-text">Card Sizes</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p class="header">If you want to have uniformly sized cards, you can use our premade size classes. Just add the size class in addition to the card class. </p>
+                                    <pre class="language-html">
+                                        <code>
+                                            &lt;div class=&quot;card small&quot;&gt;
+                                                &lt;!-- Card Content --&gt;
+                                            &lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m6 l5">
+                                        <p class="header">Small</p>
+                                        <div class="card small">
+                                            <div class="card-image">
+                                                <img src="images/sample-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="header-text">
+                                                    <span class="primary-text">Title goes here</span>
+                                                    <span class="secondary-text">Secondary text</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information.
+                                                    I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m6 l5">
+                                        <p class="header">Medium</p>
+                                        <div class="card medium">
+                                            <div class="card-image">
+                                                <img src="images/sample-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="header-text">
+                                                    <span class="primary-text">Title goes here</span>
+                                                    <span class="secondary-text">Secondary text</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information.
+                                                    I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m6 l5">
+                                        <p class="header">Large</p>
+                                        <div class="card large">
+                                            <div class="card-image">
+                                                <img src="images/sample-1.jpg" alt="">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="header-text">
+                                                    <span class="primary-text">Title goes here</span>
+                                                    <span class="secondary-text">Secondary text</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information.
+                                                    I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Card Panel-->
+                    <div class="card-panel">
+                        <p class="flow-text">Card Panel</p>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col s12 m5">
+                                    <div class="card-panel teal">
+                                        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="language-html">
+                                <code>
+                                    &lt;div class=&quot;row&quot;&gt;
+                                        &lt;div class=&quot;col s12 m5&quot;&gt;
+                                            &lt;div class=&quot;card-panel teal&quot;&gt;
+                                                &lt;span class=&quot;white-text&quot;&gt;I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                                &lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+
+        <script src="js/jquery-3.1.0.js"></script>
+        <script src="js/materialize-v1.0.0.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/rater.min.js"></script>
+        <script src="js/prism.js"></script>
+    </body>
+</html>

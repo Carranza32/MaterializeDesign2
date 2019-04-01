@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Buttons - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="#name"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Buttons</h3>
+                </div>
+                <!--Raised-->
+                <div class="card-panel">
+                    <p class="flow-text">Raised</p>
+                    <div class="section">
+                        <a class="btn waves-effect waves-light">button</a>
+                        <a class="btn waves-effect waves-light"><i class="material-icons left">cloud</i>button</a>
+                        <a class="btn waves-effect waves-light"><i class="material-icons right">cloud</i>button</a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn waves-effect waves-light"&gt;button&lt;/a&gt;
+                                &lt;a class="btn waves-effect waves-light"&gt;&lt;i class="material-icons left"&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+                                &lt;a class="btn waves-effect waves-light"&gt;&lt;i class="material-icons right"&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Outlined-->
+                <div class="card-panel">
+                    <p class="flow-text">Outlined</p>
+                    <div class="section">
+                        <a class="btn-outlined waves-effect">button</a>
+                        <a class="btn-outlined waves-effect"><i class="material-icons left">cloud</i>button</a>
+                        <a class="btn-outlined waves-effect"><i class="material-icons right">cloud</i>button</a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-outlined waves-effect"&gt;button&lt;/a&gt;
+                                &lt;a class="btn-outlined waves-effect"&gt;&lt;i class="material-icons left"&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+                                &lt;a class="btn-outlined waves-effect"&gt;&lt;i class="material-icons right"&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Flat-->
+                <div class="card-panel">
+                    <p class="flow-text">Flat</p>
+                    <div class="section">
+                        <a class="btn-flat waves-effect">button</a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-flat waves-effect"&gt;button&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Floating-->
+                <div class="card-panel">
+                    <p class="flow-text">Floating</p>
+                    <div class="section">
+                        <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-floating btn-large waves-effect waves-light"&gt;&lt;i class="material-icons"&gt;add&lt;/i&gt;&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Extended-->
+                <div class="card-panel">
+                    <p class="flow-text">Extended Floating</p>
+                    <div class="section">
+                        <a class="btn-extended-floating waves-effect waves-light">
+                            <i class="material-icons">add</i>
+                            <span>Compose</span>
+                        </a>
+                        <a class="btn-extended-floating waves-effect waves-light pink">
+                            <span>Create</span>
+                        </a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-extended-floating waves-effect waves-light"&gt;
+                                    &lt;i class="material-icons"&gt;add&lt;/i&gt;
+                                    &lt;span&gt;Compose&lt;/span&gt;
+                                &lt;/a&gt;
+                                &lt;a class="btn-extended-floating waves-effect waves-light pink"&gt;
+                                    &lt;span&gt;Create&lt;/span&gt;
+                                &lt;/a&gt;
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Submit-->
+                <div class="card-panel">
+                    <p class="flow-text">Submit Button</p>
+                    <div class="section">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons">send</i>
+                        </button>
+                        <pre class="language-html">
+                            <code>
+                                &lt;button class=&quot;btn waves-effect waves-light&quot; type=&quot;submit&quot; name=&quot;action&quot;&gt;Submit
+                                    &lt;i class=&quot;material-icons&quot;&gt;send&lt;/i&gt;
+                                &lt;/button&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Large-->
+                <div class="card-panel">
+                    <p class="flow-text">Large</p>
+                    <div class="section">        
+                        <a class="btn-large waves-effect waves-light">Button</a>
+                        <a class="btn-large waves-effect waves-light"><i class="material-icons left">cloud</i>button</a>
+                        <a class="btn-large waves-effect waves-light"><i class="material-icons right">cloud</i>button</a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-large waves-effect waves-light"&gt;button&lt;/a&gt;
+                                &lt;a class="btn-large waves-effect waves-light"&gt;button&lt;/a&gt;
+                                &lt;a class="btn-large waves-effect waves-light"&gt;button&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Small-->
+                <div class="card-panel">
+                    <p class="flow-text">Small</p>
+                    <div class="section">        
+                        <a class="btn-small waves-effect waves-light">Button</a>
+                        <a class="btn-small waves-effect waves-light"><i class="material-icons left">cloud</i>button</a>
+                        <a class="btn-small waves-effect waves-light"><i class="material-icons right">cloud</i>button</a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class="btn-small waves-effect waves-light"&gt;button&lt;/a&gt;
+                                &lt;a class="btn-small waves-effect waves-light"&gt;button&lt;/a&gt;
+                                &lt;a class="btn-small waves-effect waves-light"&gt;button&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Disabled-->
+                <div class="card-panel">
+                    <p class="flow-text">Disabled</p>
+                    <div class="section">        
+                        <a class="btn-large disabled">Button</a>
+                        <a class="btn disabled">Button</a>
+                        <a class="btn-outlined disabled">Button</a>
+                        <a class="btn-flat disabled">Button</a>
+                        <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+                        <pre class="language-html">
+                            <code>
+                                &lt;a class=&quot;btn-large disabled&quot;&gt;Button&lt;/a&gt;
+                                &lt;a class=&quot;btn disabled&quot;&gt;Button&lt;/a&gt;
+                                &lt;a class=&quot;btn-outlined disabled&quot;&gt;Button&lt;/a&gt;
+                                &lt;a class=&quot;btn-flat disabled&quot;&gt;Button&lt;/a&gt;
+                                &lt;a class=&quot;btn-floating disabled&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

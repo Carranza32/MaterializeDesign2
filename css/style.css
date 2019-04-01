@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+      url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+  
+@font-face {
+     font-family: 'GoogleSans' ;
+     font-weight: 400;
+     font-size: 16px;
+     src: url('../iconfont/Product Sans Regular.ttf') format('truetype');
+}
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'GoogleSans';
+    font-style: normal;
+    letter-spacing: 0.01px;
+}
+
+header{
+    min-height: 264px;
+}
+
+main{
+    margin-top: -11rem;
+}
+
+header, main, footer, nav {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer, nav {
+        padding-left: 0;
+    }
+    nav form {
+        margin-left: 50px;
+    }
+    nav .sidenav-trigger {
+        position: absolute !important;
+    }
+    .container{
+        width: 97% !important;
+    }
+}
+
+/*Estilos*/
+#slide-out.sidenav > li > .user-view{
+    padding: 16px;
+}
+
+#slide-out .user-view > a > span{
+    color: #202124;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#slide-out .user-view > .side-nav-logo{
+    background: url("https://materializecss.com/res/materialize.svg") center no-repeat;
+    display: block;
+    background-size: contain;
+    height: 45px;
+    margin-right: 5px;
+    width: 64px;
+}
+
+#slide-out.sidenav > li > .user-view{
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-purple {
+    background-color: #8E2DE2;
+    background: -webkit-linear-gradient(45deg, #4A00E0 0%, #8E2DE2 100%);
+    background: linear-gradient(45deg, #4A00E0 0%, #8E2DE2 100%);
+}
+
+.navbar-fixed {
+    position: fixed;
+}
+.navbar-fixed i{
+    color: #fff !important;
+}
+nav .input-field label{
+    background-color: transparent !important;
+}
+.input-field input[type="search"]:not(.browser-default) {
+    background: rgba(230, 230, 230, .1);
+    border: 1px solid rgba(230, 230, 230, .1) !important;
+    color: #fff;
+    transition: background-color .2s ease-in;
+}
+nav input.header-search-input {
+    display: inline !important;
+    height: 50px !important;
+    margin-left: 10px !important;
+}
+.input-field input[type="search"]:focus:not(.browser-default) {
+    background: rgba(230, 230, 230, .3);
+    border: 1px solid rgba(230, 230, 230, .05) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    transition: background-color .2s ease-in;
+}
+
+/*Panel*/
+.card-panel {
+    padding: 20px;
+    border-radius: 6px;
+}
+.section {
+    padding: 0 !important;
+}
+.card-panel .section h3 {
+    margin: 0.947rem 0 1.168rem 0;
+}
+.container{
+    width: 97% !important;
+}
