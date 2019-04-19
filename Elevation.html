@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Elevation - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Elevation</h3>
+                </div>
+                <!--Chips-->
+                <div class="card-panel">
+                    <p class="flow-text">Elevation</p>
+                    <p>Las sombras no fueron reemplazadas, en lugar fueron agregadas estas nuevas clases</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m4 l2 xl2 offset-xl1 offset-l1">
+                                <div class="shadow-1dp center-align card-panel truncate">shadow-1dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-2dp center-align card-panel truncate">shadow-2dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-3dp center-align card-panel truncate">shadow-3dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-4dp center-align card-panel truncate">shadow-4dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-5dp center-align card-panel truncate">shadow-5dp</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col s12 m4 l2 xl2 offset-xl1 offset-l1">
+                                <div class="shadow-6dp center-align card-panel truncate">shadow-6dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-7dp center-align card-panel truncate">shadow-7dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-8dp center-align card-panel truncate">shadow-8dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-9dp center-align card-panel truncate">shadow-9dp</div>
+                            </div>
+                            <div class="col s12 m4 l2 xl2">
+                                <div class="shadow-10dp center-align card-panel truncate">shadow-10dp</div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-1dp&quot;&gt;shadow-1dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-2dp&quot;&gt;shadow-2dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-3dp&quot;&gt;shadow-3dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-4dp&quot;&gt;shadow-4dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-5dp&quot;&gt;shadow-5dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-6dp&quot;&gt;shadow-6dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-7dp&quot;&gt;shadow-7dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-8dp&quot;&gt;shadow-8dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-9dp&quot;&gt;shadow-9dp&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12 m2&quot;&gt;
+                                    &lt;div class=&quot;shadow-10dp&quot;&gt;shadow-10dp&lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nav - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Nav</h3>
+                </div>
+                <!--NavBar-->
+                <div class="card-panel">
+                    <p class="flow-text">Right Aligned Links</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#" class="brand-logo">Logo</a>
+                                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li><a href="#!">Sass</a></li>
+                                        <li><a href="#!">Components</a></li>
+                                        <li><a href="#!">JavaScript</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul id=&quot;nav-mobile&quot; class=&quot;right hide-on-med-and-down&quot;&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--NavBar-->
+                <div class="card-panel">
+                    <p class="flow-text">Left Aligned Links</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#" class="brand-logo right">Logo</a>
+                                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                        <li><a href="#!">Sass</a></li>
+                                        <li><a href="#!">Components</a></li>
+                                        <li><a href="#!">JavaScript</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;brand-logo right&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul id=&quot;nav-mobile&quot; class=&quot;left hide-on-med-and-down&quot;&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Center-->
+                <div class="card-panel">
+                    <p class="flow-text">Centering the logo</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#" class="brand-logo center">Logo</a>
+                                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                        <li><a href="#!">Sass</a></li>
+                                        <li><a href="#!">Components</a></li>
+                                        <li><a href="#!">JavaScript</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;brand-logo center&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul id=&quot;nav-mobile&quot; class=&quot;left hide-on-med-and-down&quot;&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Active-->
+                <div class="card-panel">
+                    <p class="flow-text">Active Items</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#" class="brand-logo center">Logo</a>
+                                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                        <li><a href="#!">Sass</a></li>
+                                        <li><a href="#!">Components</a></li>
+                                        <li class="active"><a href="#!">JavaScript</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;brand-logo center&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul id=&quot;nav-mobile&quot; class=&quot;left hide-on-med-and-down&quot;&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Tabs-->
+                <div class="card-panel">
+                    <p class="flow-text">Extended Navbar with Tabs</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav class="nav-extended">
+                                    <div class="nav-wrapper">
+                                        <a href="#" class="brand-logo">Logo</a>
+                                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                            <li><a href="#!">Sass</a></li>
+                                            <li><a href="#!">Components</a></li>
+                                            <li><a href="#!">JavaScript</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-content">
+                                        <ul class="tabs tabs-transparent">
+                                            <li class="tab"><a href="#test1">Test 1</a></li>
+                                            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                                            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                                            <li class="tab"><a href="#test4">Test 4</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                        
+                                <ul class="sidenav" id="mobile-demo">
+                                    <li><a href="#!">Sass</a></li>
+                                    <li><a href="#!">Components</a></li>
+                                    <li><a href="#!">JavaScript</a></li>
+                                </ul>
+                                        
+                                <div id="test1" class="col s12">Test 1</div>
+                                <div id="test2" class="col s12">Test 2</div>
+                                <div id="test3" class="col s12">Test 3</div>
+                                <div id="test4" class="col s12">Test 4</div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav class=&quot;nav-extended&quot;&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;a href=&quot;#&quot; data-target=&quot;mobile-demo&quot; class=&quot;sidenav-trigger&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;menu&lt;/i&gt;&lt;/a&gt;
+                                        &lt;ul id=&quot;nav-mobile&quot; class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;nav-content&quot;&gt;
+                                        &lt;ul class=&quot;tabs tabs-transparent&quot;&gt;
+                                            &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#test1&quot;&gt;Test 1&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class=&quot;tab&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;#test2&quot;&gt;Test 2&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class=&quot;tab disabled&quot;&gt;&lt;a href=&quot;#test3&quot;&gt;Disabled Tab&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#test4&quot;&gt;Test 4&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                                        
+                                &lt;ul class=&quot;sidenav&quot; id=&quot;mobile-demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                        
+                                &lt;div id=&quot;test1&quot; class=&quot;col s12&quot;&gt;Test 1&lt;/div&gt;
+                                &lt;div id=&quot;test2&quot; class=&quot;col s12&quot;&gt;Test 2&lt;/div&gt;
+                                &lt;div id=&quot;test3&quot; class=&quot;col s12&quot;&gt;Test 3&lt;/div&gt;
+                                &lt;div id=&quot;test4&quot; class=&quot;col s12&quot;&gt;Test 4&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Fixed-->
+                <div class="card-panel">
+                    <p class="flow-text">Fixed Navbar</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="navbar-fixed">
+                                    <nav>
+                                        <div class="nav-wrapper">
+                                            <a href="#!" class="brand-logo">Logo</a>
+                                            <ul class="right hide-on-med-and-down">
+                                                <li><a href="#!">Sass</a></li>
+                                                <li><a href="#!">Components</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;navbar-fixed&quot;&gt;
+                                    &lt;nav&gt;
+                                        &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                            &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                            &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                                &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                    &lt;/nav&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Dropdown-->
+                <div class="card-panel">
+                    <p class="flow-text">Navbar Dropdown Menu</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Dropdown Structure -->
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li><a href="#!">one</a></li>
+                                    <li><a href="#!">two</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">three</a></li>
+                                </ul>
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo">Logo</a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a href="#!">Sass</a></li>
+                                            <li><a href="#!">Components</a></li>
+                                            <!-- Dropdown Trigger -->
+                                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;!-- Dropdown Structure --&gt;
+                                &lt;ul id=&quot;dropdown1&quot; class=&quot;dropdown-content&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;one&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;two&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;three&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                            &lt;!-- Dropdown Trigger --&gt;
+                                            &lt;li&gt;&lt;a class=&quot;dropdown-trigger&quot; href=&quot;#!&quot; data-target=&quot;dropdown1&quot;&gt;Dropdown&lt;i class=&quot;material-icons right&quot;&gt;arrow_drop_down&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                        <div class="row">
+                            <p class="flow-text">Initialization</p>
+                            <p>Inicializa el Dropdown y pon el coverTrigger en false para que se muestre debajo del botón.</p>
+                            <pre class="language-javascript">
+                                <code>
+                                    $(".dropdown-trigger").dropdown({coverTrigger: false});
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <!--Icons-->
+                <div class="card-panel">
+                    <p class="flow-text">Icons</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a href="#!"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+                                            <li><a href="#!"><i class="material-icons">view_module</i></a></li>
+                                            <li><a href="#!"><i class="material-icons">refresh</i></a></li>
+                                            <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;cloud&lt;/i&gt;Logo&lt;/a&gt;
+                                        &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons left&quot;&gt;search&lt;/i&gt;Link with Left Icon&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;view_module&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;refresh&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_vert&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Buttons-->
+                <div class="card-panel">
+                    <p class="flow-text">Buttons</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo">Logo</a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a class="waves-effect waves-light btn">Button</a></li>
+                                            <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+                                            <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a class=&quot;waves-effect waves-light btn&quot;&gt;Button&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a class=&quot;waves-effect waves-light btn&quot;&gt;Button &lt;i class=&quot;material-icons right&quot;&gt;cloud&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a class=&quot;waves-effect waves-light btn-large&quot;&gt;Large Button&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Fab-->
+                <div class="card-panel">
+                    <p class="flow-text">Extended with fab</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav class="nav-extended">
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo">Logo</a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a>A link</a></li>
+                                            <li><a>A second link</a></li>
+                                            <li><a>A third link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-content">
+                                        <span class="nav-title">Title</span>
+                                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light amber">
+                                            <i class="material-icons">favorite</i>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav class=&quot;nav-extended&quot;&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a&gt;A link&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;A second link&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;A third link&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;nav-content&quot;&gt;
+                                        &lt;span class=&quot;nav-title&quot;&gt;Title&lt;/span&gt;
+                                        &lt;a class=&quot;btn-floating btn-large halfway-fab waves-effect waves-light amber&quot;&gt;
+                                            &lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Bottom-->
+                <div class="card-panel">
+                    <p class="flow-text">Bottom nav</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <p>Despliega una navegación y acciones en el pie de la pantalla. Este componente es una opción más para tu navegación pero no es únicamente para móviles y no es recomendable para Tablets o Desktop.</p>
+                                <a class="btn" href="BottomNavbarExample.html" target="_blank">Bottom nav example!</a>
+                            </div>
+                            <div class="col s12">
+                                <br>
+                                <h6>FAB Center</h6>
+                                <p>Mínimo 1, Máximo 2 acciones alineadas a la derecha.</p>
+                                <pre class="language-html">
+                                    <code>
+                                        &lt;div class=&quot;navbar-fixed bottom&quot;&gt;
+                                            &lt;nav&gt;
+                                                &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                                    &lt;a class=&quot;btn-floating btn-large waves-effect waves-light black white-text shadow-6dp&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;
+                                                    &lt;a href=&quot;#&quot; data-target=&quot;mobile-demo&quot; class=&quot;sidenav-trigger show-on-large&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;menu&lt;/i&gt;&lt;/a&gt;
+                                                    &lt;ul id=&quot;nav-mobile&quot; class=&quot;right&quot;&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;search&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;more_vert&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                            &lt;/nav&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="col s12">
+                                <br>
+                                <h6>FAB End</h6>
+                                <p>Mínimo 2, Máximo 4 acciones alineadas a la izquierda.</p>
+                                <pre class="language-html">
+                                    <code>
+                                        &lt;div class=&quot;navbar-fixed bottom&quot;&gt;
+                                            &lt;nav&gt;
+                                                &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                                    &lt;a class=&quot;btn-floating end btn-large waves-effect waves-light black white-text shadow-6dp&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;
+                                                    &lt;ul id=&quot;nav-mobile&quot; class=&quot;left&quot;&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;archive&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;email&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;label&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;delete&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                            &lt;/nav&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="col s12">
+                                <br>
+                                <h6>No FAB</h6>
+                                <p>Mínimo 2, Máximo 4 acciones alineadas a la derecha.</p>
+                                <pre class="language-html">
+                                    <code>
+                                        &lt;div class=&quot;navbar-fixed bottom&quot;&gt;
+                                            &lt;nav&gt;
+                                                &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                                    &lt;a href=&quot;#&quot; data-target=&quot;mobile-demo&quot; class=&quot;sidenav-trigger show-on-large&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;menu&lt;/i&gt;&lt;/a&gt;
+                                                    &lt;ul id=&quot;nav-mobile&quot; class=&quot;right&quot;&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;archive&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;email&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;label&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;delete&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                            &lt;/nav&gt;
+                                        &lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Search-->
+                <div class="card-panel">
+                    <p class="flow-text">Search Bar</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <form>
+                                            <div class="input-field">
+                                                <input id="search" type="search" required>
+                                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                                <i class="material-icons">close</i>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;form&gt;
+                                            &lt;div class=&quot;input-field&quot;&gt;
+                                                &lt;input id=&quot;search&quot; type=&quot;search&quot; required&gt;
+                                                &lt;label class=&quot;label-icon&quot; for=&quot;search&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;search&lt;/i&gt;&lt;/label&gt;
+                                                &lt;i class=&quot;material-icons&quot;&gt;close&lt;/i&gt;
+                                            &lt;/div&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Search-->
+                <div class="card-panel">
+                    <p class="flow-text">Mobile Collapse Button</p>
+                    <p>Al llegar al tamaño medio se muestra automáticamente el botón de menu, si quieres que se muestre en Desktop agrega la clase 'show-on-large' al botón.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo">Logo</a>
+                                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a href="#!">Sass</a></li>
+                                            <li><a href="#!">Components</a></li>
+                                            <li><a href="#!">Javascript</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;nav&gt;
+                                    &lt;div class=&quot;nav-wrapper&quot;&gt;
+                                        &lt;a href=&quot;#!&quot; class=&quot;brand-logo&quot;&gt;Logo&lt;/a&gt;
+                                        &lt;a href=&quot;#&quot; data-target=&quot;mobile-demo&quot; class=&quot;sidenav-trigger&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;menu&lt;/i&gt;&lt;/a&gt;
+                                        &lt;ul class=&quot;right hide-on-med-and-down&quot;&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Mobile&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/nav&gt;
+
+                                &lt;ul class=&quot;sidenav&quot; id=&quot;mobile-demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Sass&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#!&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            </code>
+                        </pre>
+                        <p class="flow-text">Inicialización</p>
+                        <pre class="language-js">
+                            <code>
+                                $(document).ready(function(){
+                                    $('.sidenav').sidenav();
+                                });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

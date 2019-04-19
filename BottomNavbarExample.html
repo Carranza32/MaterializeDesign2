@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <title>Bottom Nav Example - Materialize Design 2</title>
+</head>
+<body>
+    <style>
+            /*For Icons*/
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+            src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+            url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+            url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+        }
+
+        /*For Font-family*/
+        @font-face {
+            font-family: 'GoogleSans' ;
+            font-weight: 400;
+            font-size: 16px;
+            src: url('../iconfont/Product Sans Regular.ttf') format('truetype');
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body{
+            background-color: #f2f2f2;
+            font-family: 'GoogleSans';
+            font-style: normal;
+            letter-spacing: 0.01px;
+        }    
+    </style>
+    <div class="row">
+        <div class="">
+            <ul class="tabs shadow-2dp">
+                <li class="tab col s3"><a class="active" href="#fab1">FAB Center</a></li>
+                <li class="tab col s3"><a href="#fab2">FAB End</a></li>
+                <li class="tab col s3"><a href="#fab3">No FAB</a></li>
+            </ul>
+        </div>
+        <div id="fab1" class="">
+            <div class="navbar-fixed bottom">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a class="btn-floating btn-large waves-effect waves-light black white-text shadow-6dp"><i class="material-icons">add</i></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right">
+                            <li><a href="#!"><i class="material-icons">search</i></a></li>
+                            <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="fab2" class="">
+            <div class="navbar-fixed bottom">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a class="btn-floating end btn-large waves-effect waves-light black white-text shadow-6dp"><i class="material-icons">add</i></a>
+                        <ul id="nav-mobile" class="left">
+                            <li><a href="#!"><i class="material-icons">archive</i></a></li>
+                            <li><a href="#!"><i class="material-icons">email</i></a></li>
+                            <li><a href="#!"><i class="material-icons">label</i></a></li>
+                            <li><a href="#!"><i class="material-icons">delete</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="fab3" class="">
+            <div class="navbar-fixed bottom">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right">
+                            <li><a href="#!"><i class="material-icons">archive</i></a></li>
+                            <li><a href="#!"><i class="material-icons">email</i></a></li>
+                            <li><a href="#!"><i class="material-icons">label</i></a></li>
+                            <li><a href="#!"><i class="material-icons">delete</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

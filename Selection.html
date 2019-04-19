@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selection - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Selection Controls</h3>
+                </div>
+                <!--Checkbox card-->
+                <div class="card-panel">
+                    <p class="flow-text">Checkboxes</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Red</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" checked="checked" />
+                                            <span>Yellow</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" checked="checked" />
+                                            <span>Filled in</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" checked="checked" disabled="disabled" />
+                                            <span>Green</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" disabled="disabled" />
+                                            <span>Brown</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;form action=&quot;#&quot;&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input type=&quot;checkbox&quot; /&gt;
+                                            &lt;span&gt;Red&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;
+                                            &lt;span&gt;Yellow&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input type=&quot;checkbox&quot; class=&quot;filled-in&quot; checked=&quot;checked&quot; /&gt;
+                                            &lt;span&gt;Filled in&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; disabled=&quot;disabled&quot; /&gt;
+                                            &lt;span&gt;Green&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input type=&quot;checkbox&quot; disabled=&quot;disabled&quot; /&gt;
+                                            &lt;span&gt;Brown&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--RadioBox-->
+                <div class="card-panel">
+                    <p class="flow-text">Radio Buttons</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio" checked />
+                                            <span>Red</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio" checked />
+                                            <span>Blue</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio" checked />
+                                            <span>Yellow</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="group1" type="radio" checked />
+                                            <span>Green</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;form action=&quot;#&quot;&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;with-gap&quot; name=&quot;group1&quot; type=&quot;radio&quot; checked /&gt;
+                                            &lt;span&gt;Red&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;with-gap&quot; name=&quot;group1&quot; type=&quot;radio&quot; checked /&gt;
+                                            &lt;span&gt;Blue&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;with-gap&quot; name=&quot;group1&quot; type=&quot;radio&quot; checked /&gt;
+                                            &lt;span&gt;Yellow&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                    &lt;p&gt;
+                                        &lt;label&gt;
+                                            &lt;input class=&quot;with-gap&quot; name=&quot;group1&quot; type=&quot;radio&quot; checked /&gt;
+                                            &lt;span&gt;Green&lt;/span&gt;
+                                        &lt;/label&gt;
+                                    &lt;/p&gt;
+                                &lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Switches-->
+                <div class="card-panel">
+                    <p class="flow-text">Switches</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <!-- Switch -->
+                                <div class="switch">
+                                    <label>
+                                        Off
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        On
+                                    </label>
+                                </div>
+
+                                <!-- Disabled Switch -->
+                                <div class="switch">
+                                    <label>
+                                        Off
+                                        <input disabled type="checkbox">
+                                        <span class="lever"></span>
+                                        On
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;!-- Switch --&gt;
+                                &lt;div class=&quot;switch&quot;&gt;
+                                    &lt;label&gt;
+                                        Off
+                                        &lt;input type=&quot;checkbox&quot;&gt;
+                                        &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+                                        On
+                                    &lt;/label&gt;
+                                &lt;/div&gt;
+
+                                &lt;!-- Disabled Switch --&gt;
+                                &lt;div class=&quot;switch&quot;&gt;
+                                    &lt;label&gt;
+                                        Off
+                                        &lt;input disabled type=&quot;checkbox&quot;&gt;
+                                        &lt;span class=&quot;lever&quot;&gt;&lt;/span&gt;
+                                        On
+                                    &lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

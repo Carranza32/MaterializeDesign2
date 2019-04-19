@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Text Field - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Text Field</h3>
+                </div>
+                <!--Outline-->
+                <div class="card-panel">
+                    <p class="flow-text">Outline</p>
+                    <p>Los campos de texto contorneados tienen menos énfasis visual que los campos de texto rellenados. Cuando aparecen en lugares como formularios, donde se colocan muchos campos de texto juntos, su énfasis reducido ayuda a simplificar el diseño.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field col s12">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                    <label for="disabled">Disabled</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col s12">
+                                    This is an inline input field:
+                                    <div class="input-field inline">
+                                        <input id="email_inline" type="email" class="validate">
+                                        <label for="email_inline">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;row&quot;&gt;
+                                    &lt;div class=&quot;col s12 m12&quot;&gt;
+                                        &lt;div class=&quot;input-field col s12&quot;&gt;
+                                            &lt;input placeholder=&quot;Placeholder&quot; id=&quot;first_name&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;first_name&quot;&gt;First Name&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field col s12&quot;&gt;
+                                            &lt;input id=&quot;last_name&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;last_name&quot;&gt;Last Name&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field col s12&quot;&gt;
+                                            &lt;input disabled value=&quot;I am not editable&quot; id=&quot;disabled&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;disabled&quot;&gt;Disabled&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field col s12&quot;&gt;
+                                            &lt;input id=&quot;password&quot; type=&quot;password&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field col s12&quot;&gt;
+                                            &lt;input id=&quot;email&quot; type=&quot;email&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;col s12&quot;&gt;
+                                            This is an inline input field:
+                                            &lt;div class=&quot;input-field inline&quot;&gt;
+                                                &lt;input id=&quot;email_inline&quot; type=&quot;email&quot; class=&quot;validate&quot;&gt;
+                                                &lt;label for=&quot;email_inline&quot;&gt;Email&lt;/label&gt;
+                                                &lt;span class=&quot;helper-text&quot; data-error=&quot;wrong&quot; data-success=&quot;right&quot;&gt;Helper text&lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <!--Outline-->
+                <div class="card-panel">
+                    <p class="flow-text">Filled</p>
+                    <p>Los campos de texto rellenos tienen más énfasis visual que los campos de texto contorneados, lo que los hace destacar cuando están rodeados de otros contenidos y componentes.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field filled col s12">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field filled sufix col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                                <div class="input-field filled col s12">
+                                    <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                    <label for="disabled">Disabled</label>
+                                </div>
+                                <div class="input-field filled col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="input-field filled col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col s12">
+                                    This is an inline input field:
+                                    <div class="input-field filled inline">
+                                        <input id="email_inline" type="email" class="validate">
+                                        <label for="email_inline">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;row&quot;&gt;
+                                    &lt;div class=&quot;col s12 m12&quot;&gt;
+                                        &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                            &lt;input placeholder=&quot;Placeholder&quot; id=&quot;first_name&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;first_name&quot;&gt;First Name&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field filled sufix col s12&quot;&gt;
+                                            &lt;input id=&quot;last_name&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;last_name&quot;&gt;Last Name&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                            &lt;input disabled value=&quot;I am not editable&quot; id=&quot;disabled&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;disabled&quot;&gt;Disabled&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                            &lt;input id=&quot;password&quot; type=&quot;password&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                            &lt;input id=&quot;email&quot; type=&quot;email&quot; class=&quot;validate&quot;&gt;
+                                            &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;col s12&quot;&gt;
+                                            This is an inline input field:
+                                            &lt;div class=&quot;input-field filled inline&quot;&gt;
+                                                &lt;input id=&quot;email_inline&quot; type=&quot;email&quot; class=&quot;validate&quot;&gt;
+                                                &lt;label for=&quot;email_inline&quot;&gt;Email&lt;/label&gt;
+                                                &lt;span class=&quot;helper-text&quot; data-error=&quot;wrong&quot; data-success=&quot;right&quot;&gt;Helper text&lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Textarea-->
+                <div class="card-panel">
+                    <p class="flow-text">Textarea</p>
+                    <p>Usalo para agregar parrafos o textos de más de una linea</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field col s12 m6">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Textarea</label>
+                                </div>
+                                <div class="input-field filled col s12 m6">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Textarea</label>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;row&quot;&gt;
+                                    &lt;div class=&quot;col s12 m12&quot;&gt;
+                                        &lt;div class=&quot;input-field col s12 m6&quot;&gt;
+                                            &lt;textarea id=&quot;textarea1&quot; class=&quot;materialize-textarea&quot;&gt;&lt;/textarea&gt;
+                                            &lt;label for=&quot;textarea1&quot;&gt;Textarea&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;input-field filled col s12 m6&quot;&gt;
+                                            &lt;textarea id=&quot;textarea1&quot; class=&quot;materialize-textarea&quot;&gt;&lt;/textarea&gt;
+                                            &lt;label for=&quot;textarea1&quot;&gt;Textarea&lt;/label&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Icon Prefix-->
+                <div class="card-panel">
+                    <p class="flow-text">Prefixes & Suffixes</p>
+                    <p>Ya habíamos visto los iconos de prefijos y no sufren cambio alguno</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field col s12 m6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">First Name</label>
+                                </div>
+                                <div class="input-field filled col s12 m6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Telephone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Si necesitas un icono o texto complemetario agrega la clase ".sufix" al <strong>contenedor del input</strong></p>
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field sufix col s12 m6">
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Label</label>
+                                    <span class="sufix-text">lbs</span>
+                                </div>
+                                <div class="input-field filled sufix col s12 m6">
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Label</label>
+                                    <i class="material-icons">cancel</i>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;!--Prefixes--&gt;
+                                &lt;div class=&quot;input-field col s12 m6&quot;&gt;
+                                    &lt;i class=&quot;material-icons prefix&quot;&gt;account_circle&lt;/i&gt;
+                                    &lt;input id=&quot;icon_prefix&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                    &lt;label for=&quot;icon_prefix&quot;&gt;First Name&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled col s12 m6&quot;&gt;
+                                    &lt;i class=&quot;material-icons prefix&quot;&gt;phone&lt;/i&gt;
+                                    &lt;input id=&quot;icon_telephone&quot; type=&quot;tel&quot; class=&quot;validate&quot;&gt;
+                                    &lt;label for=&quot;icon_telephone&quot;&gt;Telephone&lt;/label&gt;
+                                &lt;/div&gt;
+
+                                &lt;!--Suffixes--&gt;
+                                &lt;div class=&quot;input-field sufix col s12 m6&quot;&gt;
+                                    &lt;input id=&quot;icon_prefix&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+                                    &lt;label for=&quot;icon_prefix&quot;&gt;Label&lt;/label&gt;
+                                    &lt;span class=&quot;sufix-text&quot;&gt;lbs&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled sufix col s12 m6&quot;&gt;
+                                    &lt;input id=&quot;icon_telephone&quot; type=&quot;tel&quot; class=&quot;validate&quot;&gt;
+                                    &lt;label for=&quot;icon_telephone&quot;&gt;Label&lt;/label&gt;
+                                    &lt;i class=&quot;material-icons&quot;&gt;cancel&lt;/i&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Icon Prefix-->
+                <div class="card-panel">
+                    <p class="flow-text">Dense text field</p>
+                    <p>Si no quieres agregar un label agregar la clase "dense" y el largo se modificará a 42px</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field col s12 m6">
+                                    <input id="last_name" type="text" placeholder="Placeholder" class="validate dense">
+                                </div>
+                                <div class="input-field filled col s12 m6">
+                                    <input id="last_name" type="text" placeholder="Placeholder" class="validate dense">
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12 m6&quot;&gt;
+                                    &lt;input id=&quot;last_name&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; class=&quot;validate dense&quot;&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled col s12 m6&quot;&gt;
+                                    &lt;input id=&quot;last_name&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; class=&quot;validate dense&quot;&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--File Input-->
+                <div class="card-panel">
+                    <p class="flow-text">File Input</p>
+                    <p>Usalo para seleccionar una archivo, si necesitas seleccionar varios, agrega el atributo "multiple" en el input</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="file-field input-field col s12 m6">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text">
+                                    </div>
+                                </div>
+                                <div class="file-field input-field filled col s12 m6">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file" multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;file-field input-field col s12 m6&quot;&gt;
+                                    &lt;div class=&quot;btn&quot;&gt;
+                                        &lt;span&gt;File&lt;/span&gt;
+                                        &lt;input type=&quot;file&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;file-path-wrapper&quot;&gt;
+                                        &lt;input class=&quot;file-path validate&quot; type=&quot;text&quot;&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;file-field input-field filled col s12 m6&quot;&gt;
+                                    &lt;div class=&quot;btn&quot;&gt;
+                                        &lt;span&gt;File&lt;/span&gt;
+                                        &lt;input type=&quot;file&quot; multiple&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;file-path-wrapper&quot;&gt;
+                                        &lt;input class=&quot;file-path validate&quot; type=&quot;text&quot; placeholder=&quot;Upload one or more files&quot;&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Character Counter-->
+                <div class="card-panel">
+                    <p class="flow-text">Character Counter</p>
+                    <p>Usalo para restringir los carácteres maximos</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="input-field col s12 m6">
+                                    <input id="input_text" type="text" data-length="10">
+                                    <label for="input_text">Input text</label>
+                                </div>
+                                <div class="input-field filled col s12 m6">
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12 m6&quot;&gt;
+                                    &lt;input id=&quot;input_text&quot; type=&quot;text&quot; data-length=&quot;10&quot;&gt;
+                                    &lt;label for=&quot;input_text&quot;&gt;Input text&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled col s12 m6&quot;&gt;
+                                    &lt;textarea id=&quot;textarea2&quot; class=&quot;materialize-textarea&quot; data-length=&quot;120&quot;&gt;&lt;/textarea&gt;
+                                    &lt;label for=&quot;textarea2&quot;&gt;Textarea&lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="flow-text">Inicialización</p>
+                                <pre class="language-js">
+                                    <code>
+                                        $(document).ready(function() {
+                                            $('input#input_text, textarea#textarea2').characterCounter();
+                                        });
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Changing colors-->
+                <div class="card-panel">
+                    <p class="flow-text">Changing colors</p>
+                    <p>Cambia los colores del input outlined</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <pre class="language-css">
+                                    <code>
+                                        /* label color */
+                                        .input-field label {
+                                            color: #000;
+                                        }
+                                        /* label focus color */
+                                        .input-field input:focus + label {
+                                            color: #000 !important;
+                                        }
+                                        /* label underline focus color */
+                                        .input-field input:focus {
+                                            border: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 0px 1px 0 #000 !important;
+                                                    box-shadow: 0 0px 1px 0 #000 !important;
+                                        }
+                                        /* valid color */
+                                        .input-field input.valid {
+                                            border: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 0px 1px 0 #000 !important;
+                                                    box-shadow: 0 0px 1px 0 #000 !important;
+                                        }
+                                        /* invalid color */
+                                        .input-field input.invalid {
+                                            border: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 0px 1px 0 #000 !important;
+                                                    box-shadow: 0 0px 1px 0 #000 !important;
+                                        }
+                                        /* icon prefix focus color */
+                                        .input-field .prefix.active {
+                                            color: #000 !important;
+                                        }
+                                        /* icon sufix color */
+                                        .input-field.sufix i {
+                                            color: #000 !important;
+                                        }
+                                        /* text sufix color */
+                                        .input-field.sufix .sufix-text {
+                                            color: #000 !important;
+                                        }
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="col s12">
+                                <p>Filled</p>
+                                <pre class="language-css">
+                                    <code>
+                                        /* label color */
+                                        .input-field.filled label {
+                                            color: #000;
+                                        }
+                                        /* label focus color */
+                                        .input-field.filled input:focus + label {
+                                            color: #000 !important;
+                                        }
+                                        /* Background */
+                                        .input-field.filled  input, .input-field.filled > textarea{
+                                            background-color: rgba(219, 219, 219, 0.5);
+                                        }
+                                        /* label underline focus color */
+                                        .input-field.filled input:focus {
+                                            border-bottom: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 1px 0 0 #000 !important;
+                                                box-shadow: 0 1px 0 0 #000 !important;
+                                        }
+                                        /* valid color */
+                                        .input-field.filled input.valid {
+                                            border-bottom: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 1px 0 0 #000 !important;
+                                                box-shadow: 0 1px 0 0 #000 !important;
+                                        }
+                                        /* invalid color */
+                                        .input-field.filled input.invalid {
+                                            border-bottom: 2px solid #000 !important;
+                                            -webkit-box-shadow: 0 1px 0 0 #000 !important;
+                                                box-shadow: 0 1px 0 0 #000 !important;
+                                        }
+                                        /* icon prefix focus color */
+                                        .input-field.filled .prefix.active {
+                                            color: #000 !important;
+                                        }
+                                        /* icon sufix color */
+                                        .input-field.filled.sufix i {
+                                            color: #000 !important;
+                                        }
+                                        /* text sufix color */
+                                        .input-field.filled.sufix .sufix-text {
+                                            color: #000 !important;
+                                        }
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

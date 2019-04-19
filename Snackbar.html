@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Snackbar - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Snackbar</h3>
+                </div>
+                <!--Snackbar-->
+                <div class="card-panel">
+                    <p class="flow-text">Basic</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <a onclick="M.toast({html: 'Single-line message.'})" class="btn">Toast!</a>
+                                <p>Llámalo desde una funión JS</p>
+                                <pre class="language-js">
+                                    <code>
+                                        M.toast({html: 'Single-line message'})
+                                    </code>
+                                </pre>
+                                <p>Puedes agregarlo en la función onclick en un botón.</p>
+                                <pre class="language-html">
+                                    <code>
+                                        &lt;a onclick="M.toast({html: 'I am a toast'})" class="btn"&gt;Toast!&lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Snackbar-->
+                <div class="card-panel">
+                    <p class="flow-text">Custom HTML</p>
+                    <p>Agrega funcionalidad al toast añadiendo una acción.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <a onclick="MakeToast()" class="btn">Toast with action!</a>
+                                <p>Llámalo desde una funión JS</p>
+                                <pre class="language-javascript">
+                                    <code>
+                                        var toastHTML = '&lt;span&gt;Single-line message with action.&lt;/span&gt;&lt;button class="btn-flat toast-action"&gt;Action&lt;/button&gt;';
+                                        M.toast({html: toastHTML});
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Snackbar-->
+                <div class="card-panel">
+                    <p class="flow-text">Callback</p>
+                    <p>Cuando el toast desaparece.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <a class="btn" onclick="M.toast({html: 'I am a toast', completeCallback: function(){alert('Your toast was dismissed')}})">Toast!</a>
+                                <pre class="language-html">
+                                    <code>
+                                        &lt;a class=&quot;btn&quot; onclick=&quot;M.toast({html: &apos;I am a toast&apos;, completeCallback: function(){alert(&apos;Your toast was dismissed&apos;)}})&quot;&gt;Toast!&lt;/a&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Snackbar-->
+                <div class="card-panel">
+                    <p class="flow-text">Styling Toasts</p>
+                    <p>Agrega clases que puedan aplicarse al toast.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <a class="btn" onclick="M.toast({html: 'I am a toast', classes: 'rounded'})">Toast!</a>
+                                <pre class="language-js">
+                                    <code>
+                                        // 'rounded' is the class I'm applying to the toast
+                                        M.toast({html: 'I am a toast!', classes: 'rounded'});
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

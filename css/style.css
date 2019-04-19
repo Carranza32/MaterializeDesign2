@@ -1,3 +1,4 @@
+/*For Icons*/
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -9,7 +10,8 @@
       url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
       url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
-  
+
+/*For Font-family*/
 @font-face {
      font-family: 'GoogleSans' ;
      font-weight: 400;
@@ -49,18 +51,18 @@ main{
     margin-top: -11rem;
 }
 
-header, main, footer, nav {
+header, main, footer, .navbar-fixed nav {
     padding-left: 300px;
 }
 
 @media only screen and (max-width : 992px) {
-    header, main, footer, nav {
+    header, main, footer, .navbar-fixed nav {
         padding-left: 0;
     }
-    nav form {
+    .navbar-fixed nav form {
         margin-left: 50px;
     }
-    nav .sidenav-trigger {
+    .navbar-fixed nav .sidenav-trigger {
         position: absolute !important;
     }
     .container{
@@ -105,21 +107,21 @@ header, main, footer, nav {
 .navbar-fixed i{
     color: #fff !important;
 }
-nav .input-field label{
+.navbar-fixed nav .input-field label{
     background-color: transparent !important;
 }
-.input-field input[type="search"]:not(.browser-default) {
+.navbar-fixed .input-field input[type="search"]:not(.browser-default) {
     background: rgba(230, 230, 230, .1);
     border: 1px solid rgba(230, 230, 230, .1) !important;
     color: #fff;
     transition: background-color .2s ease-in;
 }
-nav input.header-search-input {
+.navbar-fixed nav input.header-search-input {
     display: inline !important;
     height: 50px !important;
     margin-left: 10px !important;
 }
-.input-field input[type="search"]:focus:not(.browser-default) {
+.navbar-fixed .input-field input[type="search"]:focus:not(.browser-default) {
     background: rgba(230, 230, 230, .3);
     border: 1px solid rgba(230, 230, 230, .05) !important;
     -webkit-box-shadow: none !important;

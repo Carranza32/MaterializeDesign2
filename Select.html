@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Select - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Select</h3>
+                </div>
+                <!--Important-->
+                <div class="card-panel">
+                    <p class="flow-text">Importante</p>
+                    <p>Para el correcto funcionamiento agrega esta linea a tu js para que los labels permanezcan activos.</p>
+                    <div class="section">
+                        <pre class="language-js">
+                            <code>
+                                $(document).ready(function () {
+                                    $('.select-wrapper').siblings("label").addClass("active");
+                                });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Select-->
+                <div class="card-panel">
+                    <p class="flow-text">Select</p>
+                    <p>Seleciona varias opciones.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                            <div class="input-field filled col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12&quot;&gt;
+                                    &lt;select&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Select&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                    &lt;select&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Select&lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Multiple-->
+                <div class="card-panel">
+                    <p class="flow-text">Multiple Select</p>
+                    <p>Seleciona una de varias opciones.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select multiple>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Multiple Select</label>
+                            </div>
+                            <div class="input-field filled col s12">
+                                <select multiple>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Multiple Select</label>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12&quot;&gt;
+                                    &lt;select multiple&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Multiple Select&lt;/label&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                    &lt;select&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Multiple Select&lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Groups-->
+                <div class="card-panel">
+                    <p class="flow-text">Groups</p>
+                    <p>Agrupa las selecciones.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <optgroup label="team 1">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    </optgroup>
+                                    <optgroup label="team 2">
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    </optgroup>
+                                </select>
+                                <label>Optgroups</label>
+                            </div>
+                            <div class="input-field filled col s12">
+                                <select>
+                                    <optgroup label="team 1">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    </optgroup>
+                                    <optgroup label="team 2">
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    </optgroup>
+                                </select>
+                                <label>Optgroups</label>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12&quot;&gt;
+                                    &lt;select&gt;
+                                        &lt;optgroup label=&quot;team 1&quot;&gt;
+                                            &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                            &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;/optgroup&gt;
+                                        &lt;optgroup label=&quot;team 2&quot;&gt;
+                                            &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                            &lt;option value=&quot;4&quot;&gt;Option 4&lt;/option&gt;
+                                        &lt;/optgroup&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Optgroups&lt;/label&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                    &lt;select&gt;
+                                        &lt;optgroup label=&quot;team 1&quot;&gt;
+                                            &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                            &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;/optgroup&gt;
+                                        &lt;optgroup label=&quot;team 2&quot;&gt;
+                                            &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                            &lt;option value=&quot;4&quot;&gt;Option 4&lt;/option&gt;
+                                        &lt;/optgroup&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Optgroups&lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Icons-->
+                <div class="card-panel">
+                    <p class="flow-text">Icons</p>
+                    <p>Agrega imagenes a las selecciones.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select class="icons">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" data-icon="images/sample-1.jpg">example 1</option>
+                                    <option value="" data-icon="images/office.jpg">example 2</option>
+                                    <option value="" data-icon="images/yuna.jpg">example 3</option>
+                                </select>
+                                <label>Images in select</label>
+                            </div>
+                            <div class="input-field filled col s12">
+                                <select class="icons">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="" data-icon="images/sample-1.jpg">example 1</option>
+                                    <option value="" data-icon="images/office.jpg">example 2</option>
+                                    <option value="" data-icon="images/yuna.jpg">example 3</option>
+                                </select>
+                                <label>Images in select</label>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12&quot;&gt;
+                                    &lt;select class=&quot;icons&quot;&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/sample-1.jpg&quot;&gt;example 1&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/office.jpg&quot;&gt;example 2&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/yuna.jpg&quot;&gt;example 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Images in select&lt;/label&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                    &lt;select class=&quot;icons&quot;&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/sample-1.jpg&quot;&gt;example 1&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/office.jpg&quot;&gt;example 2&lt;/option&gt;
+                                        &lt;option value=&quot;&quot; data-icon=&quot;images/yuna.jpg&quot;&gt;example 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Images in select&lt;/label&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Default-->
+                <div class="card-panel">
+                    <p class="flow-text">Browser Default</p>
+                    <p>Quita todos los estilos.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12">
+                                <label>Browser Select</label>
+                                <select class="browser-default">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;col s12&quot;&gt;
+                                    &lt;label&gt;Browser Select&lt;/label&gt;
+                                    &lt;select class=&quot;browser-default&quot;&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Disabled-->
+                <div class="card-panel">
+                    <p class="flow-text">Disabled</p>
+                    <p>Control deshabilitado.</p>
+                    <div class="section">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select disabled>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Disabled</label>
+                            </div>
+                            <div class="input-field filled col s12">
+                                <select disabled>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Disabled</label>
+                            </div>
+                            <div class="col s12">
+                                <label>Browser Select</label>
+                                <select class="browser-default" disabled>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;div class=&quot;input-field col s12&quot;&gt;
+                                    &lt;select disabled&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Disabled&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;input-field filled col s12&quot;&gt;
+                                    &lt;select disabled&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                    &lt;label&gt;Materialize Disabled&lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col s12&quot;&gt;
+                                    &lt;label&gt;Browser Select&lt;/label&gt;
+                                    &lt;select class=&quot;browser-default&quot; disabled&gt;
+                                        &lt;option value=&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+                                        &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
+                                        &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
+                                        &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!--Inicializacion-->
+                <div class="card-panel">
+                    <p class="flow-text">Inicialización</p>
+                    <div class="section">
+                        <pre class="language-js">
+                            <code>
+                                $(document).ready(function(){
+                                    $('select').formSelect();
+                                });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
