@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="Index, Follow">
+    <meta name="author" content="mario.carranza996@gmail.com">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/materialize-v1.0.0.min.css">
+    <link rel="stylesheet" href="css/MaterializeDesign2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tooltips - Materialize Design 2</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="gradient-purple">
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" class="header-search-input" type="search" required id="search">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons" id="limpiar">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view" style="max-height: 72px; padding: 12px;">
+                <i class="side-nav-logo"></i>
+                <a href="GettingStarted.html"><span class="black-text">Material Design 2</span></a>
+            </div>
+        </li>
+    </ul>
+    <header class="gradient-purple"></header>
+    <main>
+        <div class="row">
+            <div class="container" id="contenedor" >
+                <div class="section">
+                    <h3 class="white-text">Tooltips</h3>
+                </div>
+                <!--Chips-->
+                <div class="card-panel">
+                    <p class="flow-text">Tooltips</p>
+                    
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s2 center"><a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">bottom</a></div>
+                            <div class="col s2 center"><a class="btn tooltipped" data-position="top" data-tooltip="I am a tooltip">top</a></div>
+                            <div class="col s2 center"><a class="btn tooltipped" data-position="left" data-tooltip="I am a tooltip">left</a></div>
+                            <div class="col s2 center"><a class="btn tooltipped" data-position="right" data-tooltip="I am a tooltip">right</a></div>
+                        </div>
+                        <pre class="language-html">
+                            <code>
+                                &lt;!-- data-position can be : bottom, top, left, or right --&gt;
+                                &lt;!-- data-tooltip defines the tooltip text --&gt;
+                                &lt;a class=&quot;btn tooltipped&quot; data-position=&quot;bottom&quot; data-tooltip=&quot;I am a tooltip&quot;&gt;Hover me!&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/materialize-v1.0.0.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

@@ -109,6 +109,9 @@ header, main, footer, .navbar-fixed nav {
 }
 .navbar-fixed nav .input-field label{
     background-color: transparent !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .navbar-fixed .input-field input[type="search"]:not(.browser-default) {
     background: rgba(230, 230, 230, .1);
