@@ -10,19 +10,7 @@ $(document).ready(function () {
     //$(".rating").rate();
     $(".dropdown-trigger").dropdown({coverTrigger: false});
     $('input#input_text, textarea#textarea2').characterCounter();
-
-
-    //Menu completo const menu = ["Fab","Image List","List","Progress","Menu","Ripple","Slider"];
-    const menu = ["Getting Started","Button","Card","Selection","Chips","Dialog","Drawer","Elevation","Select","Snackbar","Tab Bar","Text Field","Tooltips","Nav","Typography"];
-    for (let i = 0; i < menu.length; i++) {
-        $("#slide-out").append("<li><a id='"+menu[i]+"' href='"+menu[i].replace(" ","")+".html' class='waves-effect'>"+menu[i]+"</a></li>");
-    }
-
-    $("#limpiar").click(function (e) { 
-        e.preventDefault();
-        $("#search").val('');
-    });
-
+    
     $('.header-search-input').autocomplete({
         data: {
             "Getting Started": null,
@@ -44,6 +32,18 @@ $(document).ready(function () {
         onAutocomplete: function(data){
             window.location.replace(data.replace(" ","")+'.html');
         }
+    });
+
+    //const menu = ["Button","Card","Checkbox","Chips","Dialog","Drawer","Elevation","Fab","Image List","List","Progress","Menu","Radio","Ripple","Select","Slider","Snackbar","Switch","Tab Bar","Text Field","Nav","Typography"];
+    const menu = ["Getting Started","Button","Card","Selection","Chips","Dialog","Drawer","Elevation","Select","Snackbar","Tab Bar","Text Field","Tooltips","Nav","Typography"];
+
+    for (let i = 0; i < menu.length; i++) {
+        $("#slide-out").append("<li><a id='"+menu[i]+"' href='"+menu[i].replace(" ","")+".html' class='waves-effect'>"+menu[i]+"</a></li>");
+    }
+
+    $("#limpiar").click(function (e) { 
+        e.preventDefault();
+        $("#search").val('');
     });
 });
 
